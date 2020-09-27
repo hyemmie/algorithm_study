@@ -43,6 +43,7 @@ int solve(int left, int right)
     int lo = mid, hi = mid + 1;
     // 경계 바로 양옆 높이 중 작은 것을 골라 직사각형의 높이로 선택
     int height = min(h[lo], h[hi]);
+    // 중앙 시작 경우 직전 각개격파를 통해 반환된 최댓값과 비교
     ret = max(ret, height * 2);
     // 중앙에서 시작된 사각형이 전체를 덮을 때까지
     while (left < lo || hi < right)

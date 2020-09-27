@@ -28,10 +28,10 @@ void decompress(string::iterator &it, int y, int x, int size)
     {
         //네 부분을 나눠 순서대로 압축 (재귀 호출)
         int half = size / 2;
-        decompressed(it, y, x, half);
-        decompressed(it, y, x + half, half);
-        decompressed(it, y + half, x, half);
-        decompressed(it, y + half, x + half, half);
+        decompress(it, y, x, half);
+        decompress(it, y, x + half, half);
+        decompress(it, y + half, x, half);
+        decompress(it, y + half, x + half, half);
     }
 }
 

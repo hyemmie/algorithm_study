@@ -7,8 +7,8 @@
 
 using namespace std;
 
-int n;           //도시의 수
-double dist[][]; // 두 도시 간의 거리를 저장하는 배열
+int n;                             //도시의 수
+double dist[MAX_INPUT][MAX_INPUT]; // 두 도시 간의 거리를 저장하는 배열
 
 // path: 지금까지 만든 경로
 // visted : 각 도시의 방문 여부
@@ -20,7 +20,7 @@ double shortestPath(vector<int> &path, vector<bool> &visited, double currentLeng
     if (path.size() == n)
         // 현재 경로 길이 + 마지막 도시에서 시작 도시까지의 거리
         return currentLength + dist[path[0]][path.back()];
-    double ref = 1000; //큰 값으로 초기화 -> 재귀 호출의 마지막 단계에서 비교할 때 무조건 마지막 cand를 반환
+    double ref = 1000; // 큰 값으로 초기화 -> 재귀 호출의 마지막 단계에서 비교할 때 무조건 마지막 cand를 반환
     for (int next = 0; next < n; ++next)
     {
         //방문한 도시면 건너뛰고
