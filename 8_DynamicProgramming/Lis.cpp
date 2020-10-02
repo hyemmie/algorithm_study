@@ -5,6 +5,8 @@
 #include <numeric>
 #include <iostream>
 
+using namespace std;
+
 // 최대 증가 부분 수열 문제를 해결하는 완전 탐색 알고리즘
 
 int lis(const vector<int> &A)
@@ -19,7 +21,7 @@ int lis(const vector<int> &A)
         for (int j = i + 1; j < A.size(); ++j)
             if (A[i] < A[j])
                 B.push_back(A[j]);
-        ret = max(ret, 1 + lis(B))
+        ret = max(ret, 1 + lis(B));
     }
     return ret;
 }

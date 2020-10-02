@@ -5,6 +5,8 @@
 #include <numeric>
 #include <iostream>
 
+using namespace std;
+
 // 무식하게 메모이제이션 적용해 삼각형 위 최대 경로 문제 풀기
 
 int n, triangle[100][100];
@@ -37,5 +39,5 @@ int path2(int y, int x)
     int &ret = cache2[y][x];
     if (ret != -1)
         return ret;
-    return ret = max((path2(y+1,x), path2(y+1,x+1)) + triangle[y][x];
+    return ret = max(path2(y + 1, x), path2(y + 1, x + 1)) + triangle[y][x];
 }
