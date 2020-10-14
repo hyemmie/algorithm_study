@@ -8,6 +8,7 @@ struct TreeNode
     vector<TreeNode *> children;
 };
 //지금까지 찾은 가장 긴 잎-잎 경로 저장
+// 전역임!! height 함수 실행하면서 서브트리 높이 구하는 과정과 동시에 Longest도 업데이트
 int longest;
 // root를 루트로 하는 서브트리의 높이 반환
 int height(TreeNode *root)
