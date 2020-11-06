@@ -8,6 +8,9 @@ using namespace std;
 struct NaiveDisjointSet {
 	vector<int> parent;
 
+	// : (콜론)을 쓰는 이유는 초기화 리스트를 사용했기 때문
+	// 초기화 리스트 : 생성자가 호출될 때 객체의 생성과 초기화가 한 번에 이루어짐
+	// 생성자 함수 내에서 초기화 : 객체가 생성되어, default생성자로 초기화된 상태에서 다시 한 번 할당
 	NaiveDisjointSet(int n) : parent(n) {
 		for(int i = 0; i < n; i++)
 			parent[i] = i;
