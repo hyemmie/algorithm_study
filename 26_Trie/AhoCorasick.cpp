@@ -18,7 +18,6 @@ struct TrieNode {
 	TrieNode* children[ALPHABETS];
 	// 현 위치에서 끝나는 문자열의 번호
 	int terminal;
-
 	// 이 노드에서 매칭이 실패했을 때 이 곳으로 가서 계속한다.
 	// 이 노드에 대응되는 문자열의 접미사이면서 트라이에 포함된 최대 문자열.
 	TrieNode* fail;
