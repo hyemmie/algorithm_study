@@ -40,6 +40,8 @@ vector<int> bellmanFord(int src) {
 	upper[src] = 0;
 	bool updated;
 	// V번 순회한다
+    // 제일 바깥의 for문은 완화를 위해?
+    // 완화가 최대 v-1번 일어나고, 음수를 위해 1번 추가
 	for(int iter = 0; iter < V; ++iter) {
 		updated = false;
 		for(int here = 0; here < V; ++here)
