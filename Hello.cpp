@@ -27,7 +27,7 @@ int main(int argc, char **argv)
     double f2 = 1.1111111111111111;
 
     printf("Sum = %.16f\n", (f1 + f2));
-    auto whatAmI = true;
+    bool whatAmI = true;
 
     return 0;
 }
