@@ -51,5 +51,5 @@ int main()
     }
     sort(card.begin(),card.end());
     ret = nearestSum(card, selectedCard);
-    cout << "return: " << ret << endl;
+    cout << ret << endl;
 }
