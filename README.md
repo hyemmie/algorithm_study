@@ -1,8 +1,8 @@
 # algorithm_study
 
-## 멋사 알고리즘 스터디 문풀을 위한 개인 레포!
+#### 멋사 알고리즘 스터디 문풀을 위한 개인 레포! 
 
-#### 12/26: 무식하게 풀기(상원) -  [backjoon06](./pt/backjoon06.md)
+#### 12/26: 무식하게 풀기(상원) -  [backjoon06](https://github.com/snulion-study/alogorithm-int/pt/backjoon06.md)
 - [x] 종만북 6장
 - [x] 백준: 2798, 2231, 10872, 10870 
 
